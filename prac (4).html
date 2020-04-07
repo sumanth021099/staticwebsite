@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>JABONG</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+	font-family: century Gothic;
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://assets.jassets.com/assets/images/retaillabs/2019/3/5/a5fd0dbc-894a-4905-b2df-4191929ecef91551786214126-Kurta-kurti-store-1300x470.jpg);
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+ul{
+	margin-top: 25px;
+	float: right;
+	list-style-type: none;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	margin-top: 6px;
+	float: left;
+	width: 250px;
+	height: auto;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.button{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+	border:1px solid #fff;
+	padding:10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	background-color: #fff;
+	color:#000;
+}
+input[type=text], input[type=password] {
+  position: center;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.container {
+  padding: 16px;
+}
+button {
+  background-color: transparent;
+  color: #000;
+  padding: 10px 30px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  
+  font-size: 25px;
+}
+
+button:hover {
+  	background-color: #fff;
+  opacity: 0.8;
+}
+			.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #fff; /* Fallback color */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="http://paulwriter.com/wp-content/uploads/2016/07/jabong-coupons.png">
+			</div>
+			<ul>
+				<li class="active"><a href="file:///C:/Users/Student/Downloads/prac.html">Home</a></li>
+				<li><a href="https://www.jabong.com/men">Men</a></li>
+				<li><a href="https://www.jabong.com/women">Women</a></li>
+				<li><a href="https://www.jabong.com/kids">Kids</a></li>
+				<li><a href="https://www.jabong.com/accessories-store">Accessories</a></li>
+				<li><a href="https://www.jabong.com/home-living">Home&Living</a></li>
+				<li><a href="https://www.jabong.com/sports-store">Sports</a></li>
+			</ul>
+		</div>
+		
+		<div class="button">
+			<a href="#" class="btn">SEARCH</a>
+		</div>
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		
+		<div id="id01" class="modal">
+		 <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+	  </div>
+    </div>
+	<script>
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</header>
+
+</body>
+</html>
